@@ -21,7 +21,7 @@ const handleDecrement = (event) => {
 
 
   return (
-    <section>
+    <section className='counterContainer'>
         <button onClick={handleIncrement}>+</button>
         <button className='counterBtn'>{counter}</button>
         <button onClick={handleDecrement}>-</button>

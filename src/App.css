@@ -3,17 +3,74 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root{
+  --btncolor: #d98908;
+}
+body{
+  background: #00010f;
+}
+.counterContainer,
+.formContainer,
+.mouseContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+  height: 50vh;
+}
 button{
   padding: 1rem 3rem;
-  background: purple;
+  background: var(--btncolor);
   color: white;
   border: 0;
   font-size: 2rem;
   font-weight: 600;
+  cursor: pointer;
 }
 .counterBtn {
   background: white;
   color: #000;
   border: 1px solid #ccc;
+}
+
+/*=========== FORM STYLING==========*/
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  margin-bottom: 5px;
+  padding: 10px;
+  width: 500px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--btncolor);
+  color: #ccc;
+}
+.btn {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+.button {
+   padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.button:hover {
+  background-color: rgb(217, 137, 8, .7);
+  font-weight: 600;
+}
+.containerContent{
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--btncolor);
+  color: #fff;
+}
+h1 {
+  font-size: 2rem;
 }
